@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Caching Computational Expensive Intermediary Results
+## makeCacheMatrix: creates support functions for accessing stored intermediary results
+## cacheSolve: returns the intermediary result (inverse of matrix) either by calculating it or
+##  copying it from memory
 
-## Write a short comment describing this function
+## makeCacheMatrix: initializes storage for intermediary result in parent workspace
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve: returns inverse of matrix submitted in makeCacheMatrix either by direct
+## calculation or by copying from memory store.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
